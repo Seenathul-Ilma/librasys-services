@@ -1,0 +1,9 @@
+[submodule "user-service"]
+	path = user-service
+	url = https://github.com/Seenathul-Ilma/librasys-user-service.git
+[submodule "book-service"]
+	path = book-service
+	url = https://github.com/Seenathul-Ilma/librasys-book-service.git
+[submodule "loan-service"]
+	path = loan-service
+	url = https://github.com/Seenathul-Ilma/librasys-loan-service.git
