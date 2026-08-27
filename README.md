@@ -13,9 +13,9 @@
 
 | Submodule | Domain | Port | Persistence |
 |---|---|---|---|
-| [`user-service`](https://github.com/Seenathul-Ilma/user-service) | Library members | `8081` | Cloud SQL (MySQL) |
-| [`book-service`](https://github.com/Seenathul-Ilma/book-service) | Book catalogue + cover images | `8082` | MongoDB + Cloud Storage (GCS) |
-| [`loan-service`](https://github.com/Seenathul-Ilma/loan-service) | Borrow / return transactions | `8083` | Cloud SQL (MySQL) + Firestore audit log |
+| [`user-service`](https://github.com/Seenathul-Ilma/librasys-user-service) | Library members | `8081` | Cloud SQL (MySQL) |
+| [`book-service`](https://github.com/Seenathul-Ilma/librasys-book-service) | Book catalogue + cover images | `8082` | MongoDB + Cloud Storage (GCS) |
+| [`loan-service`](https://github.com/Seenathul-Ilma/librasys-loan-service) | Borrow / return transactions | `8083` | Cloud SQL (MySQL) + Firestore audit log |
 
 All three register themselves with **Eureka** and receive their configuration from the **Config Server** at boot, both provided by the sibling repo **[`librasys-platform`](https://github.com/Seenathul-Ilma/librasys-platform)**. The UI that calls these services lives in **[`librasys-frontend`](https://github.com/Seenathul-Ilma/librasys-frontend)**.
 
